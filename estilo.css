@@ -1,0 +1,131 @@
+:root{
+	--colorTextos:#49454567;
+}
+
+*,
+::before,
+::after {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Hetilica";
+	 /* Fondo en degradado */
+	background: #03001e; 
+    background: -webkit-linear-gradient(to left, #ec38bc, #7303c0, #03001e);
+    background: linear-gradient(to left, #ec38bc, #7303c0, #03001e);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+	text-align: center;
+	font-weight: 700;
+}
+
+form{
+	background: #fff;
+	padding: 40px 0;
+	/*para agregarle sombra*/
+	box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+}
+
+.form{
+	width: 100%;
+	margin:auto;
+}
+
+form .grupo{
+	position: relative;
+	margin: 45px;
+}
+
+input{
+	background: none;
+	color: #C6C6C6;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+	outline: none;
+	color: #5E5D5D;
+}
+
+label{
+	color: var(--colorTextos);
+	font-size: 17px;
+	position: absolute;
+	left: 5px;
+	top:10px;
+	transition: 0.5s ease all;
+	pointer-events: none;
+}
+/*animacion input*/
+input:focus~label{
+	font-size: 14px;
+	color: #4F258B;
+}
+
+input:valid~label{
+	top:-14px;
+}
+
+.barra{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.barra::before{
+	content: "";
+	height: 2px;
+	width: 0%;
+	bottom: 0;
+	position: absolute;
+	background: linear-gradient(to left, #ec38bc, #7303c0, #03001e);
+	transition: 0.3s ease width;
+	left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.warnings{
+	width: 200px;
+	text-align: center;
+	margin:auto;
+	color: #B06AB3;
+	padding-top: 20px;
+}
+
+button{
+	font-family: "Hetilica";
+	background: #03001e; 
+    background: -webkit-linear-gradient(to left, #ec38bc, #7303c0, #03001e);
+    background: linear-gradient(to left, #ec38bc, #7303c0, #03001e);
+    border:none;
+    display: block;
+    width: 80%;
+    margin:10px auto;
+    color: #FFF;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+ /*la pantalla sea adaptable*/
+@media screen and (max-width: 500px){
+	form{
+		width: 80%;
+	}
+}
