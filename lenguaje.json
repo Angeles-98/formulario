@@ -1,0 +1,33 @@
+{
+	"es":{
+		"name":"Nombre",
+		"email":"Email",
+		"pass":"Contraseña",
+		"genero":"Genero",
+		"fen":"Femenino",
+		"mas":"Masculino",
+		"terminos":"Acepto los Terminos y Condiciones de la Política de proteccion de datos.",
+		"boton":"Registrarte"
+	},
+	"en":{
+		"name":"Name",
+		"email":"E-mail",
+		"pass":"Password",
+		"genero":"Gender",
+		"fen":"Female",
+		"mas":"Male",
+		"terminos":"I accept the Terms and Conditions of the Data Protection Policy.",
+		"boton":"Sing up"
+	},
+
+	"fr":{
+		"name":"Name",
+		"email":"E-mail",
+		"pass":"Password",
+		"genero":"Gender",
+		"fen":"Female",
+		"mas":"Male",
+		"terminos":"I accept the Terms and Conditions of the Data Protection Policy.",
+		"boton":"Sing up"
+	}
+}
