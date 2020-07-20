@@ -16,10 +16,23 @@ body {
 	background: #03001e; 
     background: -webkit-linear-gradient(to left, #ec38bc, #7303c0, #03001e);
     background: linear-gradient(to left, #ec38bc, #7303c0, #03001e);
-    height: 650px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+select{
+	position: relative;
+	left:  85%;
+}
+select:focus{
+	outline: none;
+}
+.es{
+	background-image: url("iconos/espana.png");
+	width: 24px;
+	height: 24px;
 }
 
 h1{
@@ -61,7 +74,7 @@ input:focus{
 	color: #5E5D5D;
 }
 
-label{
+.text{
 	color: var(--colorTextos);
 	font-size: 17px;
 	position: absolute;
@@ -70,13 +83,13 @@ label{
 	transition: 0.5s ease all;
 	pointer-events: none;
 }
-/*animacion input*/
-input:focus~label{
+/*animacion*/
+input:focus~.text{
 	font-size: 14px;
 	color: #4F258B;
 }
 
-input:valid~label{
+input:valid~.text{
 	top:-14px;
 }
 
@@ -102,12 +115,61 @@ input:focus~.barra::before{
 }
 
 .warnings{
-	width: 200px;
 	text-align: center;
 	margin:auto;
 	color: #B06AB3;
 	padding-top: 20px;
 }
+
+.gen-f{
+	color: var(--colorTextos);
+	font-size: 17px;
+	position: relative;
+	left: 80%;
+	top:-14px;
+	transition: 0.5s ease all;
+	pointer-events: none;
+
+}
+
+.gen-m{
+	color: var(--colorTextos);
+	font-size: 17px;
+	position: relative;
+	left:  55%;
+	top:-14px;
+	transition: 0.5s ease all;
+	pointer-events: none;
+
+}
+
+.genero-f{
+	display: inline-block;
+	position: relative;
+	width: 10%;
+}
+
+.genero-m{
+	display: inline-block;
+	position: relative;
+	width: 80%;
+}
+ #aceptar{
+	position: relative;
+	width: 10%;
+ }
+ p{
+ 	color: var(--colorTextos);
+	font-size: 17px;
+	position: relative;
+	display: inline-block;
+	left: 10%;
+	top:-14px;
+	width: 70%;
+	transition: 0.5s ease all;
+	pointer-events: none;
+ }
+ 
 
 button{
 	font-family: "Hetilica";
