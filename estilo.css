@@ -22,22 +22,114 @@ body {
     align-items: center;
 }
 
-select{
+/*select{
 	position: relative;
 	left:  85%;
 }
 select:focus{
 	outline: none;
+}*/
+
+/*selectbox*/
+
+.contenedor{
+	width: 120px;
+	height: 50px;
+	margin-right: 0;
+	display: inline-block;
+
 }
-.es{
-	background-image: url("iconos/espana.png");
-	width: 24px;
-	height: 24px;
+.selectbox {
+	width: 70%;
+
 }
 
+a{
+	text-decoration: none;
+}
+
+.leng{
+	font-size: 12px;
+	color: #000;
+
+}
+
+.select {
+	background: #fff;
+	width: 100%;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: .2s ease all;
+	margin-bottom: 5px;
+	padding: 0 5px;
+	position: relative;
+	border: 2px solid transparent;
+}
+
+.select.active,
+.select:hover {
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .16);
+	border: 1px solid #49156C;
+}
+.select.active:before {
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 5px solid #49156C;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid transparent;
+	position: absolute;
+	bottom: -10px;
+	left: calc(50% - 5px);
+}
+
+.select i {
+	font-size: 14px;
+	margin-left: 1px;
+	color: #49156C;
+}
+
+.opciones{
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .16);
+	max-height: 100px;
+	width: 100%;
+	display: none;
+}
+
+.opciones.active{
+	display: block;
+}
+
+.contenido-opcion{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	transition: 0.2s ease all;
+	padding:  0 5px;
+}
+
+.opciones .contenido-opcion{
+	padding:  0 5px;
+}
+
+.opciones .contenido-opcion:hover{
+	background: #E1E1E1;
+}
+
+/*fin selectbox*/
 h1{
-	text-align: center;
+	margin-left: 40%;
 	font-weight: 700;
+    width: 35%;
+    display: inline-block;
 }
 
 form{
@@ -117,6 +209,7 @@ input:focus~.barra::before{
 .warnings{
 	text-align: center;
 	margin:auto;
+	width: 80%;
 	color: #B06AB3;
 	padding-top: 20px;
 }

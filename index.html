@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario</title>
   <link rel="icon" type="image/icon" href="iconos/flor.png">
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -12,13 +13,48 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <select class="idioma">
-    <option id="es"><i src="iconos/espana.png"></i>ES</option>
-    <option id="en"><i src="iconos/estados-unidos.png"></i>EN</option>
-  </select>
 
-  	<div class="form">
-  		<h1 class="traduce" key="regis">Registro</h1>
+    <div class="form">
+
+      <h1 class="traduce" key="regis">Registro</h1>
+    
+        <!-- Selectbox ico -->
+        <div class="contenedor">
+              <div class="selectbox">
+                <div class="select" id="select">
+                  <div class="contenido-select">
+                    <img src="iconos/espana.png" alt="">
+                    <label class="leng">ES</label>
+                  </div>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="opciones" id="opciones">
+                  <a href="#" class="opcion">
+                    <div class="contenido-opcion">
+                    <div id="es" class="es">
+                      <img src="iconos/espana.png" alt="">
+                    <label class="leng">ES</label>
+                    </div>
+                    </div>
+                  </a>
+                  <a href="#" class="opcion">
+                    <div class="contenido-opcion">
+                    <div id="en" class="en">
+                    <img src="iconos/estados-unidos.png" alt="">
+                    <label class="leng">EN</label>
+                    </div>
+                      
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            <input type="hidden" name="idioma" id="input-select" value="">
+        </div>
+    <!-- Fin Selectbox ico -->
+
+
   		<div class="grupo">
   			<input type="text" name="" id="name"><span class="barra"></span>
   			<label for="" key="name" class="text">Nombre</label>
